@@ -1,0 +1,26 @@
+<!--Javascript exercise 1.5 :Move data from an Array to another Array.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Exe 4</title>
+</head>
+<body>
+
+    <script>
+        let myArray = ['Thomas', 'Noel', 'Faraz'];  //Given array.
+            
+        for(let i = 0; i < myArray.length; i++){    //Initalize i to 0. Condition to always loop until same lenght aka same number. i++ to always add 1 more
+            let emptyArray = myArray[i];            //Copies data from myArray
+            for(let j = 0; j < emptyArray.length; j++){ //Initalize j to 0. Condition to always loop until same lenght aka same number. i++ to always add 1 more
+                console.log(emptyArray[j]);             //Shows result in Console
+            }
+        }
+
+        //for(let i = 0; i < myArray.length; i++){  
+          //console.log(myArray[i]);      //Just shows the orignal array through loop
+      //}
+    </script>
+
+</body>
+</html>
