@@ -1,0 +1,29 @@
+<!--Javascript Exercise 2.2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Javascript Exercise 2.1 + 2.2</title>
+</head>
+
+<body>
+<p>Click the button to enter your name!</p>      <!--Tells you what to do-->   
+
+<button onclick="myFunction()">Press me</button>    <!--Create a button to start the funtion-->
+
+<p id="output"></p>     <!--make an id that we can call upon after we got the name from the user-->
+
+<script>
+    function myFunction() {                                         //Create a new function
+        let person = prompt("What is your first and last name?", "Write here!")    //Pop-up with name request
+        if (person != null) {                                       //If person is not null do this...
+            document.getElementById("output").innerHTML =           //Here we call on our "output" id so we can get an output after user write their name
+            "Hello " + person + "! That's an awesome name!";         //The output users will see 
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>
